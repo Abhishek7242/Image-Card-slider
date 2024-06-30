@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+MX:wght@100..400&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+
+
+}
+.slider-container{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: url('https://img.freepik.com/free-vector/copy-space-bokeh-spring-lights-background_52683-55649.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-images{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+
+
+}
+.slider-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 6px;
+
+}
+.slider-img{
+    width: 110px;
+border-radius: 6px; 
+cursor: pointer;
+position: relative;
+transition: .7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.slider-images .slider-img:first-child,.slider-images .slider-img:last-child{
+height: 380px;
+
+}
+.slider-images .slider-img:nth-child(2),.slider-images .slider-img:nth-child(6){
+height: 460px;
+
+}
+.slider-images .slider-img:nth-child(3),.slider-images .slider-img:nth-child(4),.slider-images .slider-img:nth-child(5){
+height: 565px;
+
+}
+h1{
+    text-shadow: 0 0 5px black;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    /* top: 50%;
+    left: -10%; */
+    transform: rotate(270deg);
+    transition: .7s ease;
+
+
+}
+
+.details{
+    position: absolute;
+    bottom: 43px;
+    left: 43px;
+    
+}
+.details h2{
+  
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 44px;
+    color: white;
+    text-transform: uppercase;
+    transition: .7s ease;
+    display: none;
+    
+}
+.details p{
+  
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 33px;
+    color: white;
+    text-transform: uppercase;
+    transition: .7s ease;
+    display: none;
+
+}
+
+.slider-img.active{
+    width: 680px!important;
+    height: 670px!important;
+    
+
+}
+.slider-img.active h1{
+display: none;
+
+
+
+}
+.slider-img.active .details p ,.slider-img.active .details h2{
+display: block;
+
+
+
+}
